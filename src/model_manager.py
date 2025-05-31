@@ -4,7 +4,7 @@ from config.config import ENV_MODEL_NAME
 MODEL_NAME = ENV_MODEL_NAME
 
 if MODEL_NAME == None:
-    MODEL_NAME = 'dolphin-mistral'
+    MODEL_NAME = 'llama2'
 else:
     pass
 
