@@ -71,14 +71,15 @@ pip install -r requirements.txt
 
 ## ⚙️ Configuration
 
-### 1. Add your **Telegram bot token** in `config/config.py`:
+### 1: Create a `.env` file in the project root
 
-```python
-# config/config.py
-TELEGRAM_BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN_HERE"
+```env
+# .env
+TELEGRAM_BOT_TOKEN = "your-telegram-bot-token-here"
+ENV_MODEL_NAME = "llama2"
 ```
 
-### 2. Choose your **model** in `src/model_manager.py`:
+### 2. Choose your **model** in `src/model_manager.py` (Automatically chosen, can be changed in .env file):
 
 ```python
 MODEL_NAME = "llama2"
@@ -138,5 +139,9 @@ requests
 ```
 
 (Add more as needed based on your environment.)
+
+---
+
+Absolutely! Here's a small, clear section you can add to your `README.md` under the **Configuration** section to explain how to use a `.env` file for storing the Telegram bot token.
 
 ---
