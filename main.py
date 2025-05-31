@@ -14,7 +14,7 @@ def main():
         '-m', '--model',
         choices=['1', '2'],
         default='0',
-        help="Select the system prompt model (1=default, 2=poetry bot). Default is 1."
+        help="Select the system prompt model (1=basic, 2=poetry bot). Default is 0."
     )
     args = parser.parse_args()
 
