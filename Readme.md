@@ -16,8 +16,8 @@ Telegram_AI_Chatbot-Basic-/
 │   ├── bot.py                 # Telegram bot logic, message handling, API communication
 │   ├── model_manager.py       # Ensures the required model is installed in Ollama
 │   └── prompts.py             # Loads system prompts from binary files
-├── system_prompt.bin          # Optional system prompt (used with --model 69)
-├── system_prompt2.bin         # Optional system prompt (used with --model 2)
+├── binary_prompts/
+│   ├── system_prompt.bin          # Optional system prompt (used with --poetry model)
 └── README.md                  # You are here!
 ```
 
