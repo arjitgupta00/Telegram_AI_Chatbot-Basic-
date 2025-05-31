@@ -3,6 +3,11 @@ from config.config import ENV_MODEL_NAME
 
 MODEL_NAME = ENV_MODEL_NAME
 
+if MODEL_NAME == None:
+    MODEL_NAME = 'dolphin-mistral'
+else:
+    pass
+
 def ensure_ollama_model():
     """
     Check if Ollama has MODEL_NAME installed.
