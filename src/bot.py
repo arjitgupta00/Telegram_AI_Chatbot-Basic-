@@ -7,18 +7,7 @@ def create_bot(token, system_prompt, model_name="llama-2-7b-chat"):
 
     async def start_command(update, context):
         context.user_data["chat_history"] = [{"role": "system", "content": system_prompt}]
-        await update.message.reply_text('''👋 Hey! I’m your chatbot.
-                                        Type /start to begin a new conversation.
-                                        Type /stop to end the chat anytime.
-                                        Let’s go! 💬''')
-
-    async def start_command(update, context):
-        context.user_data["chat_history"] = [{"role": "system", "content": system_prompt}]
-        await update.message.reply_text("Conversation started! How can I help?")
-
-    async def stop_command(update, context):
-        await update.message.reply_text("Bot stopped. To restart, send /start.")
-        await app.stop()
+        await update.message.reply_text('''👋 Hey! I'm your chatbot.\n\nType /start to begin a new conversation.\n\nLet's go! 💬''')
 
     async def handle_message(update, context):
         user_message = update.message.text
@@ -43,7 +32,6 @@ def create_bot(token, system_prompt, model_name="llama-2-7b-chat"):
         await update.message.reply_text(reply)
 
     app.add_handler(CommandHandler("start", start_command))
-    app.add_handler(CommandHandler("stop", stop_command))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
     return app

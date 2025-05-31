@@ -12,13 +12,14 @@ def main():
     parser = argparse.ArgumentParser(description="Run Telegram LLaMA chatbot")
     parser.add_argument(
         '-m', '--model',
-        choices=['1', '2', '69'],
-        default='1',
-        help="Select the system prompt model (1=default, 2=system_prompt2.bin, 69=system_prompt.bin). Default is 1."
+        choices=['1', '2'],
+        default='0',
+        help="Select the system prompt model (1=default, 2=poetry bot). Default is 1."
     )
     args = parser.parse_args()
 
     system_prompt = load_system_prompt(args.model)
+    print(system_prompt[:100])
     print(f"[INFO] System prompt loaded (model {args.model}):\n{system_prompt[:100]}...\n")
 
     # Ensure Ollama model is installed before starting the bot

@@ -1,6 +1,6 @@
 import os
 
-def load_system_prompt(choice: str):
+def load_system_prompt(choice):
     ### Can use different type of chatbots to deploy from the existing binary system prompts.
 
     if choice == '1': # Basic Assistant

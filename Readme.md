@@ -30,7 +30,7 @@ Telegram_AI_Chatbot-Basic-/
 * ⚙️ CLI system prompt selector (`--model` options)
 * 🔐 Uses local Ollama instance — no API key required
 * ✅ Safe and censored model flexibility
-* ✋ `/start` to reset chat, `/stop` to shut down the bot process
+* ✋ `/start` to reset chat
 * 🔄 Auto-installs model (if missing) via Ollama CLI
 
 ---
@@ -110,9 +110,6 @@ python main.py --model 2   # loads from system_prompt.bin
 | Command  | Description                         |
 | -------- | ----------------------------------- |
 | `/start` | Start or reset the conversation     |
-| `/stop`  | Stop the bot process (only locally) |
-
-> ⚠️ `/stop` stops **only your running instance**. Others (on other devices/servers) continue if running.
 
 ---
 
