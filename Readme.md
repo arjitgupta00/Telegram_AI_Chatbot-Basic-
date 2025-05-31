@@ -125,20 +125,3 @@ MODEL_NAME = "llama2"
 These chat-tuned variants are optimized for helpful, safe assistant behavior.
 
 ---
-
-## 📦 `requirements.txt`
-
-Ensure this includes:
-
-```
-python-telegram-bot==20.8
-requests
-```
-
-(Add more as needed based on your environment.)
-
----
-
-Absolutely! Here's a small, clear section you can add to your `README.md` under the **Configuration** section to explain how to use a `.env` file for storing the Telegram bot token.
-
----
