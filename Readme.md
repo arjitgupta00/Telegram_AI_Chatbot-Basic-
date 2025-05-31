@@ -7,7 +7,7 @@ A lightweight Telegram chatbot powered by an **censored and safe LLaMA-based mod
 ## 🗂️ Project Structure
 
 ```
-project-root/
+Telegram_AI_Chatbot-Basic-/
 ├── main.py                    # Entry point – run this to start the bot
 ├── requirements.txt           # Required Python dependencies
 ├── config/
